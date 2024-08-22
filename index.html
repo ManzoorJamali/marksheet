@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prctice</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./js/main.js">
+
+</head>
+<body>
+
+	<table class="table" style="width: 100px;margin-left: 500px;">
+		<tr>
+			<td>
+				<label>English</label><br>
+				<input type="text" id="eng" required></td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Math</label><br>
+				<input type="text" id="math" required></td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Web</label><br>
+		      <input type="text" id="web"required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input type="button"class= 'btn btn-primary' value="Check"  onclick= "calcy()"></td> 
+		</tr> 
+		<tr>
+			<div>
+				
+				<p id="showdata"></p>
+
+			</div>
+		</tr>
+	</table>
+
+
+
+    <div class="container">
+
+		<h2>Result Announce</h2>
+		            
+		<table class="table table-striped">
+		  <thead>
+			
+			  <th >Subject</th><th>Obtain Marks</th><th>Delete</th>
+			  <tr>
+			  <td >
+				English
+			  </td>
+			  <td id="english" style="align-content: center;">
+
+			  </td>
+			  <td id="del1">
+				<input type="button"class= 'btn btn-danger btn-sm' value="Delete"  onclick= "del()"></td> 
+			  </td>
+			  <tr>
+				<tr>
+					<td>
+						Math
+					</td>
+					<td id="math1"></td>
+					<td id="del2">
+						<input type="button"class= 'btn btn-danger btn-sm' value="Delete"  onclick= "del2()"></td> 
+					  </td>
+				</tr>
+				<tr>
+					<td>
+						Web
+					</td>
+					<td id="web1"></td>
+					<td id="del3">
+						<input type="button"class= 'btn btn-danger btn-sm' value="Delete"  onclick= "del3()"></td> 
+					  </td>
+				</tr>
+				<br>
+
+				<tr>
+					<th >Obtained</th>
+					<td id="obt"></td>
+					<td>
+
+					<p id="text"></p></td>
+
+				</tr>
+				<tr>
+					<th>Total</th>
+					<td id="total"></td>
+				</tr>
+				<tr>
+					<th>percentage</th>
+					<td id="perc"></td>
+					
+				</tr>
+			 
+			  <tr>
+				<th>Grade</th>
+				<td id="grade"></td>
+			  </tr>
+			</thead></table>
+
+	
+
+    
+	    	<script src="app.js"></script>
+</body>
+</html>
